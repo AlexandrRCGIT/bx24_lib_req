@@ -4,7 +4,7 @@ require_once 'C:/Users/Genuis/Desktop/разработки/myLibs/bx24_req/autol
 
 use Bx24\Bx24Client;
 
-$bx24 = new Bx24Client('https://rentasnab.bitrix24.ru/rest/256/68q888xsoht5ypu5/');
+$bx24 = new Bx24Client('');
 
 
 $params = [

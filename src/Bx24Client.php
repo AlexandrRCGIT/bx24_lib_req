@@ -8,6 +8,7 @@ class Bx24Client
     use Traits\DealTrait;
     use Traits\LeadTrait;
     use Traits\bitrix_processesTrait;
+    use Traits\smart_listTrait;
     /**
      * Конструктор класса
      * 

@@ -11,6 +11,6 @@ $params = [
     'IBLOCK_TYPE_ID' => 'bitrix_processes',
     'IBLOCK_ID' => 76
 ];
-// Получение лида
+// Получение списка элементов бизнес процесса
 $lead = $bx24->getElemsBatchBP($params);
 print_r($lead);

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'C:/Users/Genuis/Desktop/разработки/myLibs/bx24_req/autoload.php';
+require_once '../bx24_req/autoload.php';
 
 use Bx24\Bx24Client;
 

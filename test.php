@@ -9,7 +9,10 @@ $bx24 = new Bx24Client('');
 
 $params = [
     'IBLOCK_TYPE_ID' => 'bitrix_processes',
-    'IBLOCK_ID' => 76
+    'IBLOCK_ID' => 76,
+    'SELECT' => [
+        'NAME'
+    ]
 ];
 // Получение списка элементов бизнес процесса
 $lead = $bx24->getElemsBatchBP($params);

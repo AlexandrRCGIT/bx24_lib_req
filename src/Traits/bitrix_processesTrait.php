@@ -25,7 +25,6 @@ trait bitrix_processesTrait
      * @param array $params
      *  - IBLOCK_TYPE_ID - Идентификатор типа инфоблока (обязательно): lists, bitrix_processes, lists_socnet
      *  - IBLOCK_ID - Обязательно (ID бизнесс-процесса)
-     *  - ELEMENT_CODE - Обязательное (Уникальное значение)
      * @return array Результат удаления
      */
     public function deleteElemInBP(int $params): array

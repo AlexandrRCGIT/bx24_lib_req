@@ -8,12 +8,15 @@ $bx24 = new Bx24Client('');
 
 
 $params = [
-    'IBLOCK_TYPE_ID' => 'bitrix_processes',
-    'IBLOCK_ID' => 76,
-    'SELECT' => [
-        'NAME'
+    'filter' => [
+        '>=DATE_CREATE' => '2023-12-01' . "00:00:00",
+        '<=DATE_CREATE' => '2025-06-30' .  "23:59:59",
+    ],
+    'select' => [
+        'ID',
+        'DATE_CREATE'
     ]
 ];
 // Получение списка элементов бизнес процесса
-$lead = $bx24->getElemsBatchBP($params);
+$lead = $bx24->deleteLeadListBatch($params);
 print_r($lead);
